@@ -21,6 +21,15 @@ A modern Android application demonstrating best practices for network communicat
 - **Async Programming**: [Coroutines](https://kotlinlang.org/docs/coroutines-overview.html) & [Flow](https://kotlinlang.org/docs/flow.html)
 - **Navigation**: [Jetpack Navigation Compose](https://developer.android.com/jetpack/compose/navigation)
 
+## 🏗 Architecture
+
+This project follows the **MVVM (Model-View-ViewModel)** architectural pattern to ensure a clean separation of concerns, making the code more maintainable and testable:
+
+- **Model**: Represents the data layer (Data classes in the `model` package).
+- **View**: The UI layer built with Jetpack Compose (Composables in the `view` package).
+- **ViewModel**: Acts as a bridge between the View and the Model, handling UI state and business logic.
+- **Repository**: Handles data operations and provides a clean API for the ViewModel to retrieve data from the network.
+
 ## 📁 Project Structure
 
 ```text
